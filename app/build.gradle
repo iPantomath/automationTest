@@ -1,0 +1,259 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.dhl.demp.mydmac"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                //for Room
+                arguments += [
+                        "room.schemaLocation"  : "$projectDir/schemas".toString(),
+                        "room.incremental"     : "true",
+                        "room.expandProjection": "true"]
+            }
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+        }
+
+        test {
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // For Kotlin projects
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    //load signing configurations info from the local.properties
+    //format of the info in local.properties is like:
+    //test.storeFile=...
+    //test.storePassword=...
+    //test.keyAlias=...
+    //test.keyPassword=...
+    //release.storeFile=...
+    //release.storePassword=...
+    //release.keyAlias=...
+    //release.keyPassword=...
+    def localPropsFile = rootProject.file('local.properties')
+    if (localPropsFile.exists()) {
+        def props = new Properties()
+        props.load(new FileInputStream(localPropsFile))
+
+        //try to find info for the each signingConfig
+        for (def signingConfig : android.signingConfigs) {
+            if (props["${signingConfig.name}.storeFile"] != null) {
+                android.signingConfigs[signingConfig.name].storeFile = file(props["${signingConfig.name}.storeFile"])
+                android.signingConfigs[signingConfig.name].storePassword = props["${signingConfig.name}.storePassword"]
+                android.signingConfigs[signingConfig.name].keyAlias = props["${signingConfig.name}.keyAlias"]
+                android.signingConfigs[signingConfig.name].keyPassword = props["${signingConfig.name}.keyPassword"]
+            }
+        }
+    }
+
+    flavorDimensions "type"
+    productFlavors {
+        dmac {
+            dimension "type"
+            applicationId = "com.dhl.demp.dmac"
+        }
+        tca {
+            dimension "type"
+            applicationId = "com.dhl.demp.dmac"
+        }
+        dmac_e {
+            dimension "type"
+            applicationId = "com.dhl.demp.mydmac_e"
+        }
+        express {
+            dimension "type"
+            applicationId = "com.dhl.demp.mydmac_exp"
+        }
+        dp {
+            dimension "type"
+            applicationId = "com.dhl.demp.mydmac_dp"
+        }
+        dhl {
+            dimension "type"
+            applicationId = "com.dhl.demp.mydmac_dhl"
+        }
+        dmacTip {
+            dimension "type"
+            applicationId = "com.dhl.demp.dmac"
+        }
+        expressTip {
+            dimension "type"
+            applicationId = "com.dhl.demp.mydmac_exp"
+        }
+    }
+
+    //generate DMAC_APP_ID
+    applicationVariants.all { variant ->
+        switch (variant.flavorName) {
+            case "dmac":
+            case "dmacTip":
+            case "expressTip":
+            case "tca":
+                buildConfigField "String", "DMAC_APP_ID", "\"com.dhl.demp.mydmac${variant.buildType.applicationIdSuffix ?: ""}\""
+                break
+            case "dmac_e":
+                buildConfigField "String", "DMAC_APP_ID", "\"com.dhl.demp.mydmac_e${variant.buildType.applicationIdSuffix ?: ""}\""
+                break
+            case "express":
+                buildConfigField "String", "DMAC_APP_ID", "\"com.dhl.demp.mydmac_exp${variant.buildType.applicationIdSuffix ?: ""}\""
+                break
+            case "dp":
+                buildConfigField "String", "DMAC_APP_ID", "\"com.dhl.demp.mydmac_dp${variant.buildType.applicationIdSuffix ?: ""}\""
+                break
+            case "dhl":
+                buildConfigField "String", "DMAC_APP_ID", "\"com.dhl.demp.mydmac_dhl${variant.buildType.applicationIdSuffix ?: ""}\""
+                break
+        }
+    }
+
+    buildTypes {
+        //test build
+        debug {
+            signingConfig signingConfigs.test
+            applicationIdSuffix ".test"
+            buildConfigField "String", "API_KEY", getFromKeys("test.API_KEY")
+            resValue "string", "dmacauth_scheme", "dmactestauth"
+            resValue "string", "deeplink_scheme", "dmactest"
+            resValue "string", "app_link_host", "applinks-test.dhl.com"
+
+            //analytics
+            buildConfigField "String", "ANALYTICS_BASE_URL", "\"https://magtw1-test.dhl.com/manalytics/\""
+        }
+
+        uat {
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            applicationIdSuffix ".test"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField "String", "API_KEY", getFromKeys("uat.API_KEY")
+            resValue "string", "dmacauth_scheme", "dmacuatauth"
+            resValue "string", "deeplink_scheme", "dmacuat"
+            resValue "string", "app_link_host", "applinks-uat.dhl.com"
+
+            //analytics
+            buildConfigField "String", "ANALYTICS_BASE_URL", "\"https://magtw1-uat.dhl.com/manalytics/\""
+        }
+
+        //production build
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField "String", "API_KEY", getFromKeys("prod.API_KEY")
+            resValue "string", "dmacauth_scheme", "dmacauth"
+            resValue "string", "deeplink_scheme", "dmac"
+            resValue "string", "app_link_host", "applinks.dhl.com"
+
+            //analytics
+            buildConfigField "String", "ANALYTICS_BASE_URL", "\"https://magtw1.dhl.com/manalytics/\""
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    dependencies {
+        implementation fileTree(include: ['*.jar'], dir: 'libs')
+        //appcompat
+        implementation libs.appcompat
+        implementation libs.androidx_material
+        implementation libs.androidx_fragment
+        implementation libs.fragment_ktx
+        implementation libs.constraintlayout
+        implementation "com.android.support:percent:25.0.0"
+        implementation libs.biometric
+
+        //coroutines
+        implementation libs.coroutines_android
+
+        //lifecycle
+        implementation libs.lifecycle_common
+        implementation libs.lifecycle_ktx
+
+        implementation libs.paging
+
+        //room
+        implementation libs.room
+        kapt libs.room_compiler
+        implementation libs.room_ktx
+
+        //play services
+        implementation libs.play_services
+        implementation libs.play_services_vision
+
+        //retrofit
+        implementation libs.retrofit
+        implementation libs.gson
+        implementation libs.gson_converter
+        implementation libs.okhttp_logging_interceptor
+
+        implementation libs.glide
+
+        //Firebase
+        implementation libs.firebase_messaging
+        implementation libs.crashlytics
+
+        //Hilt
+        implementation libs.hilt
+        kapt libs.hilt_compiler
+
+        implementation libs.timber
+
+        implementation(libs.msal) {
+            exclude group: 'com.microsoft.device.display'
+        }
+
+        testImplementation libs.junit
+        testImplementation libs.robolectric
+    }
+}
+
+def getFromKeys(key) {
+    def result = keys.get(key)
+    if (result == null) {
+        throw new Exception("Key " + key + " not found in keys.properties")
+    }
+
+    return result
+}

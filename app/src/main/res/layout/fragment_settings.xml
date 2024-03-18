@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/settings_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SettingsItem"
+            app:drawableLeftCompat="@drawable/ic_settings_about"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="@string/settings_about" />
+        <TextView
+            android:id="@+id/settings_whats_new"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SettingsItem"
+            app:drawableLeftCompat="@drawable/ic_settings_whats_new"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="@string/settings_whats_new" />
+        <TextView
+            android:id="@+id/settings_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SettingsItem"
+            app:drawableLeftCompat="@drawable/ic_settings_terms"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="@string/settings_terms" />
+        <TextView
+            android:id="@+id/settings_privacy_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SettingsItem"
+            app:drawableLeftCompat="@drawable/ic_settings_privacy_notice"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="@string/settings_privacy_notice" />
+        <TextView
+            android:id="@+id/settings_disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SettingsItem"
+            app:drawableLeftCompat="@drawable/ic_settings_disclaimer"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="@string/settings_disclaimer" />
+        <TextView
+            android:id="@+id/settings_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SettingsItem"
+            app:drawableLeftCompat="@drawable/ic_settings_contact"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="@string/settings_contact" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1E000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/SettingsItem"
+                android:clickable="false"
+                app:drawableLeftCompat="@drawable/ic_settings_notifications"
+                android:text="@string/notifications" />
+
+            <FrameLayout
+                android:id="@+id/notifications_enabled_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/notifications_enabled"
+                    app:theme="@style/SettingsSwitchStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="false"
+                    android:paddingHorizontal="16dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/SettingsItem"
+                android:clickable="false"
+                app:drawableLeftCompat="@drawable/ic_settings_device_owner"
+                android:text="@string/settings_device_owner" />
+            <TextView
+                android:id="@+id/device_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SettingsItem"
+                app:drawableRightCompat="@drawable/ic_drop_down"
+                app:drawableTint="#8A000000"
+                android:drawablePadding="4dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/SettingsItem"
+                android:clickable="false"
+                app:drawableLeftCompat="@drawable/ic_settings_sim_owner"
+                android:text="@string/settings_sim_owner" />
+            <TextView
+                android:id="@+id/sim_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SettingsItem"
+                app:drawableRightCompat="@drawable/ic_drop_down"
+                app:drawableTint="#8A000000"
+                android:drawablePadding="4dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/settings_lock_corporate_apps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            style="@style/RedButton"
+            android:textSize="18sp"
+            app:fontFamily="@font/delivery_condensed_black"
+            android:layout_marginVertical="24dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/settings_lock_corporate_apps" />
+
+        <TextView
+            android:id="@+id/settings_change_passcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SettingsItem"
+            app:drawableLeftCompat="@drawable/ic_settings_change_passcode"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="@string/change_passcode" />
+        <TextView
+            android:id="@+id/settings_set_passcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SettingsItem"
+            app:drawableLeftCompat="@drawable/ic_settings_change_passcode"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="@string/set_passcode" />
+        <TextView
+            android:id="@+id/settings_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SettingsItem"
+            app:drawableLeftCompat="@drawable/ic_settings_logout"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="@string/logout" />
+        <TextView
+            android:id="@+id/settings_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SettingsItem"
+            android:visibility="gone"
+            app:drawableLeftCompat="@drawable/ic_settings"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="@string/configuration_title" />
+        <TextView
+            android:id="@+id/settings_testing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            style="@style/SettingsItem"
+            app:drawableRightCompat="@drawable/ic_arrow_right"
+            android:text="TESTING" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/root"
+    >
+
+    <SurfaceView
+        android:id="@+id/mCameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvscan1"
+        android:text="ScanCode1"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        />
+    <TextView
+        android:id="@+id/tvscanval1"
+        android:layout_toRightOf="@+id/tvscan1"
+        android:layout_toEndOf="@+id/tvscan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvscan2"
+        android:layout_below="@+id/tvscan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ScanCode2"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        />
+    <TextView
+        android:id="@+id/tvscanval2"
+        android:layout_toRightOf="@+id/tvscan2"
+        android:layout_below="@+id/tvscanval1"
+        android:layout_alignStart="@+id/tvscanval1"
+        android:layout_alignLeft="@+id/tvscanval1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+       />
+
+
+    <!--Button
+        android:id="@+id/mSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code_info"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/black"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        /-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/mClose"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/close"
+            />
+
+        <Button
+            android:id="@+id/mReset"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/reset"
+            />
+
+        <Button
+            android:id="@+id/mSend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/send"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

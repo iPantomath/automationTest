@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_internal"
+        android:title="@string/internal"
+        android:icon="@drawable/ic_tab_internal"/>
+    <item
+        android:id="@+id/tab_public"
+        android:title="@string/public_tab"
+        android:icon="@drawable/ic_tab_public"/>
+    <item
+        android:id="@+id/tab_installed"
+        android:title="@string/installed"
+        android:icon="@drawable/ic_tab_installed"/>
+<!--    <item-->
+<!--        android:id="@+id/tab_notifications"-->
+<!--        android:title="@string/notifications"-->
+<!--        android:icon="@drawable/ic_tab_notifications"/>-->
+<!--    <item-->
+<!--        android:id="@+id/tab_inventory"-->
+<!--        android:title="@string/inventory"-->
+<!--        android:icon="@drawable/ic_tab_inventory"/>-->
+    <item
+        android:id="@+id/tab_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_tab_settings"/>
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/auto_reg_progress"
+        android:visibility="invisible"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="#75B127"
+        android:indeterminateTintMode="src_atop"/>
+    <TextView
+        android:id="@+id/auto_reg_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/login_auto_error"
+        android:textColor="#D40511"
+        android:textSize="18sp" />
+</LinearLayout>

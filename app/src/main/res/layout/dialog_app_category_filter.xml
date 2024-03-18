@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:viewBindingIgnore="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="@string/categories"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/dark_grey" />
+    <CheckBox
+        android:id="@+id/show_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:text="@string/category_show_all"
+        style="@style/CategoryFilterCheckboxStyle"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:background="@color/dark_grey" />
+    <CheckBox
+        android:id="@+id/dpdhl_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:text="@string/category_dpdhl_group"
+        style="@style/CategoryFilterCheckboxStyle" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:background="@color/dark_grey"
+        style="@style/CategoryFilterCheckboxStyle" />
+    <CheckBox
+        android:id="@+id/global_forwarding_freight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:text="@string/category_global_forwarding_freight"
+        style="@style/CategoryFilterCheckboxStyle" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:background="@color/dark_grey" />
+    <CheckBox
+        android:id="@+id/supply_chain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:text="@string/category_supply_chain"
+        style="@style/CategoryFilterCheckboxStyle" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:background="@color/dark_grey" />
+    <CheckBox
+        android:id="@+id/ecs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:text="@string/category_ecs"
+        style="@style/CategoryFilterCheckboxStyle" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:background="@color/dark_grey" />
+    <CheckBox
+        android:id="@+id/express"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:text="@string/category_express"
+        style="@style/CategoryFilterCheckboxStyle" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:background="@color/dark_grey" />
+    <CheckBox
+        android:id="@+id/gbs_csi_cc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:text="@string/category_gbs_csi_cc"
+        style="@style/CategoryFilterCheckboxStyle" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:background="@color/dark_grey" />
+    <CheckBox
+        android:id="@+id/pnp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/category_filter_item_horizontal_margin"
+        android:text="@string/category_pnp"
+        style="@style/CategoryFilterCheckboxStyle" />
+</LinearLayout>

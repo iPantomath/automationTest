@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.dhl.demp.dmac.ui.MainActivity"
+    tools:viewBindingIgnore="true">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_activity_toolbar_color"
+        app:titleTextColor="@color/black"
+        app:titleTextAppearance="@style/ToolbarTextAppearance"
+        app:elevation="4dp"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Light" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_bottom_nav_bg"
+        app:itemIconTint="@color/main_bottom_nav_color"
+        app:itemTextColor="@color/main_bottom_nav_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/main_nav_menu" />
+</LinearLayout>

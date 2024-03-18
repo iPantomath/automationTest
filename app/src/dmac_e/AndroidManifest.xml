@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity android:name="com.dhl.demp.mydmac.activity.EnterPasscodeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="activate"
+                    android:pathPrefix="/"
+                    android:scheme="@string/e_dmacauth_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.dhl.demp.mydmac.activity.DeepLinkActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/e_dmacauth_scheme" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

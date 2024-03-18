@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dip">
+    <RadioGroup
+        android:id="@+id/environment_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/environment_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/test_url_label" />
+
+        <RadioButton
+            android:id="@+id/environment_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dev_url_label" />
+
+        <RadioButton
+            android:id="@+id/environment_uat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uat_url_label" />
+
+        <RadioButton
+            android:id="@+id/environment_uat_prague"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uat_prague_url_label" />
+
+        <RadioButton
+            android:id="@+id/environment_uat_cyberjaya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uat_cyberjaya_url_label" />
+
+        <RadioButton
+            android:id="@+id/environment_uat_ashburn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uat_ashburn_url_label" />
+
+        <RadioButton
+            android:id="@+id/environment_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_url_label" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/url_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="URL">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/url"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textUri"
+                android:maxLines="1"
+                android:enabled="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/api_key_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="API key">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/api_key"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:maxLines="1"
+                android:enabled="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/scope_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Scope">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/scope"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:maxLines="1"
+                android:enabled="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RadioGroup>
+</ScrollView>

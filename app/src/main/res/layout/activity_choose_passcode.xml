@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/passcode_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/auth_screens_bg"
+        android:tint="#8c000000" />
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="5%">
+        <View
+            android:id="@+id/focus_thief"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+        <TextView
+            android:id="@+id/passcodeInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/corporate_apps_may_require"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/passcodeInfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/corporate_apps_may_require2"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/infoIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_info_white" />
+        <TextView
+            android:id="@+id/passcodeError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/passcode_mismatch_error"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passcodeTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/enter_new_passcode"
+                android:theme="@style/LoginTextLabel"
+                app:passwordToggleTint="@android:color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passcodeET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:inputType="numberPassword"
+                    android:textColor="@android:color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passcodeTILR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/verify_your_new_passcode"
+                android:theme="@style/LoginTextLabel"
+                app:passwordToggleTint="@android:color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passcodeETR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/transparent_button"
+                android:text="@string/submit_btn"
+                android:textColor="@android:color/white"
+                android:textSize="26sp" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.percentlayout.widget.PercentFrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application>
+
+        <activity
+            android:name="com.dhl.demp.mydmac.activity.LauncherActivity"
+            android:label="DHL Launcher"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:theme="@style/LauncherTheme"
+            android:screenOrientation="unspecified">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dhl.demp.mydmac.activity.ScanCodeActivity"
+            android:label="@string/market_title"
+            android:theme="@style/MarketTheme"/>
+        <activity
+            android:name="com.dhl.demp.mydmac.activity.AutoRegActivity"
+            android:theme="@style/MarketThemeTransStatusBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="unspecified"/>
+
+        <receiver
+            android:name="com.dhl.demp.mydmac.AppUpgradedReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DHL App Center (DMAC)</string>
+
+    <string name="market_title">DMAC</string>
+
+    <string name="market_required">Notwendig</string>
+    <string name="market_all">Apps</string>
+
+    <string name="market_action_installed">INSTALLIERT</string>
+    <string name="market_action_install">INSTALLIEREN</string>
+    <string name="market_action_update">AKTUALISIEREN</string>
+    <string name="market_action_request">BEANTRAGEN</string>
+    <string name="market_action_requested">BEANTRAGT</string>
+
+    <string name="market_dependency_required">Installation von Vorraussetzungen nötig</string>
+
+    <string name="configuration_title">Startmenü</string>
+    <string name="background_text">Hintergrundtext</string>
+    <string name="configuration_wallpaper">Hintergrundbild</string>
+    <string name="configuration_text_color">Textfarbe</string>
+    <string name="configuration_wallpaper_select">Auswählen</string>
+
+    <string name="login_screen_info">Ihr Gerät wurde noch nicht registriert. Bitte geben Sie Ihre Emailadresse ein.</string>
+    <string name="login_auto_screen_info">Ihr Gerät wurde noch nicht registriert. Bitte warten Sie, die Registrierung wird bearbeitet...</string>
+    <string name="login_auto_error">Die automatische Registrierung war nicht erfolgreich, versuchen Sie es erneut oder versuchen Sie einen anderen Registrierungstyp.</string>
+    <string name="pin_screen_info">PIN code wurde gesendet an: \n%1$s. Bitte überprüfen Sie Ihren Posteingang und geben Sie den PIN-Code ein.</string>
+    <string name="wrong_email"> Bitte geben Sie eine gültige Email Adresse an!</string>
+    <string name="submit_btn">Abschicken</string>
+    <string name="re_send_request"> Anfrage erneut senden </string>
+    <string name="lorem"><![CDATA[Descriptionr\nNutzen Sie einfach und bequem von unterwegs mit unserer Android App die DHL Paket Services von Deutsche Post DHL.r\nFolgende Services stehen Ihnen mit der kostenlosen DHL Paket Android App immer und überall zur Verfügung:r\nPakete:r\n• Paket-Sendungsverfolgung inkl. Barcode-Scannerr\n• Sendungsübersicht: Bis zu 10 Sendungen speichern & verwaltenr\n• Sendungsübersicht: Aktualisieren Sie alle Sendungen mit einem Klickr\n• Sendungsstatus per E-Mail weiterleitenr\n• Zugriff auf zusätzliche Services nach Login für registrierte Paket.de Benutzerr\n• Sendungsübersicht (eingeloggt): Bis zu 100 Sendungen speichern & verwalten inkl. Archivr\n• Sendungsübersicht (eingeloggt): Automatische Anzeige vieler Pakete mit PostNummer r\n• Wunschtag (eingeloggt): Bei geeigneten Sendungen aus angebotenen Zustelltagen einen Wunschtag auswählenr\nPortorechner:r\n• Preisauskunft für DHL Paket Privatkundenprodukte r\n• Preisauskunft für DHL Express Privatkundenprodukter\nPostfinder:r\n• Packstationen-, Paketboxen- & Filial-Suche inkl. Postfiliale Direkt und Öffnungszeitenr\n• GPS-unterstützte Suche oder manuelle Adresseingaber\n• Ergebnisse als Listen- Kartenansicht]]></string>
+    <string name="email_address"> E-Mail-Addresse </string>
+    <string name="wait_request"> Bitte warten Sie, Ihre Anfrage wird bearbeitet.</string>
+    <string name="about">Über das Gerät</string>
+    <string name="starting_download">Starte Download, Installation wird automatisch starten.</string>
+    <string name="my_apps_tab_title">Meine Apps</string>
+    <string name="toolbar_title">DHL App Center</string>
+    //about activity titles
+    <string name="app_full_name">DHL App Center (DMAC)</string>
+    <string name="application_build_version">Applikation Build Version</string>
+    <string name="time_zone">Zeitzone</string>
+    <string name="os_version">Betriebssystem Version</string>
+    <string name="registered_email">Registrierte Email</string>
+    <string name="imei">IMEI</string>
+    <string name="sn">S/N</string>
+    <string name="contact">Kontakt</string>
+    <string name="contact_info_html"> Zur Unterstützung senden Sie bitte eine E-Mail von Ihrer Firmenemail an new.servicedesk@dhl.com und erwähnen Sie den DMAC Service im Nachrichtentext.</string>
+    <string name="logout"> Abmelden </string>
+    <string name="really_unregister"> Möchten Sie dieses Gerät wirklich abmelden?</string>
+    <string name="unable_to_connect"> Die Verbindung zum Server kann nicht hergestellt werden.</string>
+    <string name="rate_me"> Bewerte diese App:</string>
+    <string name="details_annotation">Anmerkung:</string>
+    <string name="details_update">Aktualisierung:</string>
+    <string name="details_description">Beschreibung:</string>
+    <string name="details_release_note">Veröffentlichungshinweis:</string>
+    <string name="details_versions">Versionen:</string>
+    <string name="open_weblink">ÖFFNEN</string>
+    <string name="details">Anwendungsdetails</string>
+    <string name="visit_web">Website besuchen</string>
+    <string name="remove_from_myapss">Apps aus Meine Apps entfernen.</string>
+    <string name="add_to_myapps">Zu Meine Apps hinzufügen.</string>
+    <string name="email_not_registered"> Ihr Gerät oder Ihre E-Mail-Adresse ist nicht registriert. Kontaktieren Sie Ihren Vorgesetzten </string>
+    <string name="now_we_can_install"> Jetzt können Sie Apps von unserem Store installieren.</string>
+    <string name="cant_install_apps_without_permissions"> Wir können Apps nicht ohne LESE- und SCHREIBE-Berechtigung auf Ihrem Gerät installieren. Ziehen Sie in Betracht, diese Berechtigungen zu erteilen.</string>
+    <string name="md5_donot_match"> MD5 stimmt nicht überein, versuchen Sie den Download erneut.</string>
+    <string name="file_corrupted"> Datei ist beschädigt, versuchen Sie den Download erneut.</string>
+    <string name="save_config">Speichern</string>
+    <string name="you_have_entered_wrong_passcode"> Sie haben ein falsches Passwort eingegeben </string>
+    <string name="please_enter_your_passcode"> Bitte geben Sie Ihren Zugangscode ein </string>
+    <string name="passcode_mismatch_error"> Passcode stimmt nicht überein. Bitte versuche es erneut </string>
+    <string name="passcode_not_set_error">Passcode is not set</string>
+    <string name="passcode_is_invalid_error"> Der Passcode ist nicht festgelegt </string>
+    <string name="you_have_entered_wrong_passcode_3_times"> Sie haben mehr als 3 Mal ein falsches Passwort eingegeben. Bitte warten Sie 10 Minuten, um es erneut zu versuchen.</string>
+    <string name="reset_pin"> Passcode zurücksetzen </string>
+    <string name="set_passcode"> Passcode festlegen </string>
+    <string name="menu_lock_corporate_apps">Konzernanwendung sperren</string>
+    <string name="menu_about">Über</string>
+    <string name="menu_change_passcode">Passcode ändern</string>
+    <string name="request_pin_error"> Fehler beim Anfordern der PIN </string>
+    <string name="deactivated_user"> Benutzer ist deaktiviert </string>
+    <string name="server_not_responding_error">Server reagiert nicht. Bitte versuchen Sie es später erneut.</string>
+    <string name="uuid">UUID</string>
+    <string name="pls_get_internet"> Bitte stellen Sie vor dem Login eine Internetverbindung her.</string>
+    <string name="server_is_not_resp"> Der Server antwortet nicht. Bitte wenden Sie sich an Ihren Helpdesk oder versuchen Sie es spätererneut.</string>
+    <string name="change_passcode">Passcode ändern</string>
+    <string name="corporate_apps_may_require"> Für Unternehmens-Apps ist möglicherweise ein Passcode erforderlich, um Unternehmensdaten zu schützen.</string>
+    <string name="corporate_apps_may_require2"> Bitte geben Sie den 4- bis 6-stelligen Passcode für dieses Gerät ein.</string>
+    <string name="corporate_apps_may_require_dialog"> Für Unternehmens-Apps ist möglicherweise ein Passcode erforderlich, um Unternehmensdaten zu schützen \n\nBitte geben Sie einen 4- bis 6-stelligen Passcode für dieses Gerät ein.\n\nAuf Apps kann nach der Verwendung des Passcodes 15 Minuten lang zugegriffen werden, ohne dass eine erneute Anmeldung erforderlich ist.\n\nDer Zugriff auf Apps kann manuell über das Menü "Unternehmensanwendungen sperren" im App Center gesperrt werden </string>
+    <string name="enter_new_passcode"> Neuen Passcode eingeben </string>
+    <string name="verify_your_new_passcode">Passcode bestätigen</string>
+    <string name="to_change_your_passcode"> Um Ihren Passcode zu ändern, muss zuerst eine Authentifizierung mit PIN-Code an die E-Mail-Adresse gesendet werden, die für die Registrierung des Geräts verwendet wird. Möchten Sie fortfahren und Ihren Passcode ändern?</string>
+    <string name="please_enter_your_passcode_to_access"> Corporate Apps, die mit dem Passcode \nauf diesem Gerät eingestellt sind, sind gesperrt.\n\nBitte geben Sie Ihren Zugangscode ein, um auf sie zuzugreifen.</string>
+    <string name="failed_load_apps_list"> Fehler beim Laden der Liste der Anwendungen. Bitte überprüfen Sie Ihre Netzwerkverbindung.</string>
+    <string name="failed_load_app_details"> Fehler beim Laden der Anwendungsdetails </string>
+    <string name="cant_login_now">Login derzeit nicht möglich.</string>
+    <string name="more">Mehr</string>
+    <string name="less">Weniger</string>
+    <string name="version">Version</string>
+    <string name="developed_by">Entwickelt von:</string>
+    <string name="support_contact">Support Kontakt:</string>
+    <string name="send_email_chooser">Email senden</string>
+    <string name="rejected_email"> Die Registrierungs-E-Mail wurde abgelehnt. Kontaktieren Sie Ihren Vorgesetzten.</string>
+    <string name="invalid_grant_message"> Der von Ihnen eingegebene PIN-Code ist falsch.</string>
+    <string name="max_attempts_reached_message"> Maximale Anzahl der erreichten Versuche Bitte senden Sie die Registrierungsanfrage erneut.</string>
+    <string name="pin_expired_message"> Der PIN-Code ist abgelaufen. Bitte senden Sie die Registrierungsanfrage erneut!</string>
+    <string name="failed_request_approve"> Fehler beim Anfordern der Genehmigung der Anwendung </string>
+    <string name="app_not_found">App wurde nicht gefunden</string>
+    <string name="device_physical_info"> Physische Geräteinformationen </string>
+    <string name="device_physical_info_template">App Build Version: %1$s\nZeitzone: %2$s\nUUID: %3$s \nBetriebssystem Version: %4$s\nGerätemodel: %5$s</string>
+
+    <string name="failed_login">Login fehlgeschlagen</string>
+
+    <string name="release_type_test">TEST</string>
+    <string name="release_type_beta">BETA</string>
+    <string name="release_type_dev">DEV</string>
+    <string name="not_stopped_properly"> DMAC wurde nicht ordnungsgemäß beendet. Sie erhalten möglicherweise keine Benachrichtigungen.</string>
+    <string name="read_phone_state_permission_required">\"Lese Telefonstatus\" Erlaubnis erforderlich </string>
+    <string name="autoregistration">Automatisch</string>
+    <string name="search">Suchen</string>
+    <string name="close">Schließen</string>
+    <string name="reset">Zurücksetzen</string>
+    <string name="send">Senden</string>
+    <string name="email">Email</string>
+    <string name="android_model_label">Gerätemodell</string>
+    <string name="fingerprint_authentication_failed"> Fingerabdruck-Authentifizierung fehlgeschlagen</string>
+    <string name="fingerprint_hint_no_fingerprints">Um einen Fingerabdruck zu verwenden, muss dieser unter Einstellungen-> Sicherheit konfiguriert werden.</string>
+    <string name="fingerprint_hint_not_blocked">Um einen Fingerabdruck zu verwenden, muss der Sperrbildschirm aktiviert sein.</string>
+    <string name="fingerprint_hint">Sie können einen Fingerabdruck anstelle eines Passcodes verwenden</string>
+    <string name="fingerprint_hint_lockout">Der Fingerabdruck ist für 30 Sekunden gesperrt</string>
+    <string name="device_rooted_message">Root-Zugriff erkannt. Bitte erwägen Sie, ein anderes Gerät zu verwenden.</string>
+
+    <string name="error_invalid_grant">Verbindungsfehler, bitte versuchen Sie es später erneut. Wenn das Problem weiterhin besteht, registrieren Sie Ihr Gerät erneut.</string>
+    <string name="error_approval_required">Wenden Sie sich an den Administrator Ihrer Gerätegruppe oder registrieren Sie Ihr Gerät erneut.</string>
+    <string name="error">Fehler</string>
+    <string name="register_again">Erneut registrieren</string>
+
+    <!--InstallationSequenceApproveDialog-->
+    <string name="cancel">Abbrechen</string>
+    <string name="apps_to_install"> Die Liste der Apps, die installiert werden sollen mit %1$s</string>
+    <string name="version_template">Version: %1$s</string>
+    <string name="installation_sequence_not_available">Sie haben keinen Zugriff auf abhängige Anwendungen. Die Installation wurde abgebrochen.</string>
+
+    <string name="dependencies_label">Abhängigkeiten: </string>
+    <string name="details_tags">Kategorien:</string>
+
+    <string name="search_bar_title">DPDHL App Center</string>
+    <string name="server_unavailable_error">Server derzeit nicht verfügbar - versuchen Sie es später.</string>
+
+    <string name="apk_download_success">Download abgeschlossen</string>
+    <string name="apk_download_fail">Download fehlgeschlagen</string>
+
+    <string name="upgrade_dialog_text">Es ist eine neue Version des DHL App Centers (DMAC) verfügbar. Möchten Sie die Aktualisierung jetzt starten?</string>
+    <string name="upgrade">Aktualisieren</string>
+    <string name="postpone">Später aktualisieren</string>
+
+    <string name="environment">Umgebung</string>
+
+    <!--AAD-->
+    <string name="azure_login">Mit Azure anmelden</string>
+    <string name="aad_login_failed">Anmeldung mit Azure fehlgeschlagen</string>
+    <string name="auth_failed">Anmeldung fehlgeschlagen</string>
+    <string name="send_me_pin">PIN zusenden</string>
+
+    <string name="internal">Intern</string>
+    <string name="public_tab">Öffentlich</string>
+    <string name="notifications">Benachrichtigungen</string>
+    <string name="inventory">Inventar</string>
+    <string name="inventory_title">Mein Geräteinventar</string>
+    <string name="settings">Einstellungen</string>
+
+    <string name="filter">Filter</string>
+    <string name="categories">Kategorien</string>
+    <string name="category_show_all">Alle Apps (alle) anzeigen</string>
+    <string name="category_dpdhl_group">DHL-Gruppe (DHL)</string>
+    <string name="category_global_forwarding_freight">DHL Global Forwarding (DGFF)</string>
+    <string name="category_supply_chain">DHL Supply Chain(DSC)</string>
+    <string name="category_ecs">DHL eCommerce Solutions(eCS)</string>
+    <string name="category_express">DHL Express(EXP)</string>
+    <string name="category_gbs_csi_cc">Globale Geschäftsdienste, Kundenlösungen und -innovationen sowie Kundenbetreuung (GBS, CSI &amp; CC)</string>
+    <string name="category_pnp">Post &amp; Paket (P &amp; P)</string>
+
+    <string name="public_apps">Öffentliche Apps</string>
+    <string name="installed_apps">Installierte Apps</string>
+    <string name="installed">Installierte</string>
+
+    <string name="settings_about">Über das Gerät</string>
+    <string name="settings_whats_new">Was ist neu</string>
+    <string name="settings_terms">Nutzungsbedingungen</string>
+    <string name="settings_privacy_notice">Datenschutz</string>
+    <string name="settings_disclaimer">Veröffentlichungshinweise</string>
+    <string name="settings_contact">Kontakt</string>
+    <string name="settings_lock_corporate_apps">Konzernanwendung sperren</string>
+    <string name="settings_device_owner">Gerätebesitzer</string>
+    <string name="settings_sim_owner">Besitzer der SIM-Karte</string>
+
+    <string name="retry">Wiederholen</string>
+    <string name="failed_load_notifications">Benachrichtigungen konnten nicht geladen werden. Bitte überprüfen Sie Ihre Netzwerkverbindung </string>
+    <string name="failed_load_further_notifications">Weitere Benachrichtigungen konnten nicht geladen werden. Bitte überprüfen Sie Ihre Netzwerkverbindung </string>
+
+    <string name="owner_private">Privat</string>
+    <string name="owner_corporate">Corporate</string>
+    <string name="owner_both">Beide</string>
+
+    <string name="support">Support</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_info_html">Falls Sie Feedback oder eine Anregung zu DMAC senden möchten, senden Sie bitte eine E-Mail an demp@dhl.com von Ihrem Firmenkonto aus. Vielen Dank!</string>
+</resources>

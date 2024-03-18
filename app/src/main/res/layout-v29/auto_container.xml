@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/imei_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/imei"
+        android:theme="@style/LoginTextLabel">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/imeiET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number|textNoSuggestions"
+            android:maxLines="1"
+            android:textColor="@android:color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/sn"
+        android:theme="@style/LoginTextLabel">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/snET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

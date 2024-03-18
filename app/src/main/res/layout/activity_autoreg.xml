@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/auth_screens_bg"
+        android:tint="#8c000000"/>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginBottomPercent="10%">
+
+        <View
+            android:id="@+id/focus_thief"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/auto_login_screen_info"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:hint="@string/email_address"
+            android:theme="@style/LoginTextLabel"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            android:id="@+id/auto_container"
+            layout="@layout/auto_container"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/info_variables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="10dip"/>
+
+        <ImageView
+            android:id="@+id/infoIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/ic_info_white"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/autologinBTN"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/auto_reg_btn_bg"
+                android:text= "@string/autoregistration"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginLeft="8dp"/>
+            <Button
+                android:id="@+id/loginBTN"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/auto_reg_btn_bg"
+                android:text="@string/email"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.percentlayout.widget.PercentFrameLayout>

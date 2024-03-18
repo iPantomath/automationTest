@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DPDHL eApp Center</string>
+
+    <string name="login_screen_info">Ihr Gerät wurde noch nicht registriert. Bitte geben Sie Ihre E-Mail-Adresse oder Telefonnummer ein.</string>
+    <string name="email_address">E-Mail-Adresse / Telefonnummer</string>
+
+    <string name="registered_email">Registrierte E-Mail / Telefonnummer</string>
+</resources>

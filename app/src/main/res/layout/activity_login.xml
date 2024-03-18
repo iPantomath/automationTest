@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/auth_screens_bg"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.55"
+        android:background="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        >
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"/>
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="90"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:id="@+id/focus_thief"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/login_screen_info"
+                    android:textColor="@android:color/white"
+                    android:textSize="26sp"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/loginTIL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="@string/email_address"
+                        android:theme="@style/LoginTextLabel"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/loginET"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textEmailAddress|textNoSuggestions"
+                            android:maxLines="1"
+                            android:textColor="@android:color/white"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <ImageView
+                        android:id="@+id/infoIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dip"
+                        android:layout_gravity="left"
+                        app:srcCompat="@drawable/ic_info_white"/>
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/rooted_device_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dip"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/device_rooted_message_bg"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:text="@string/device_rooted_message"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                >
+                <Button
+                    android:id="@+id/loginBTN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/transparent_button"
+                    android:text="@string/submit_btn"
+                    android:textColor="@android:color/white"
+                    android:textSize="26sp"
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"/>
+
+        </LinearLayout>
+</RelativeLayout>

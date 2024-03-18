@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/app_name"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|always" />
+    <item
+        android:id="@+id/category_filter"
+        android:icon="@drawable/ic_funnel"
+        android:title="@string/filter"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/refresh_apps_list"
+        android:icon="@drawable/ic_refresh"
+        android:orderInCategory="0"
+        android:title="Refresh"
+        app:showAsAction="always" />
+</menu>

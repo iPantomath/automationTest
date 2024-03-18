@@ -1,0 +1,4 @@
+<resources>
+    <string name="e_dmacauth_scheme" translatable="false">edmactestauth</string>
+    <string name="app_name">DHL eApp Center TEST</string>
+</resources>

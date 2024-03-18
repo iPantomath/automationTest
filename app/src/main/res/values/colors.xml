@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FFCD00</color>
+    <color name="primaryDark">#dcb103</color>
+    <color name="accent">#d70511</color>
+    <color name="red">#d70511</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#003cff</color>
+    <color name="back_gray">#EFEDEC</color>
+    <color name="dark_grey">@android:color/darker_gray</color>
+    <color name="black">@android:color/black</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="type_dev">#db2828</color>
+    <color name="type_test">#6435c9</color>
+    <color name="type_beta">#2185d0</color>
+
+    <color name="market_activity_tabs_color">#000000</color>
+    <color name="toolbar_title_color">#D40511</color>
+
+    <!--for color picker-->
+    <color name="text_color_red">#F6402C</color>
+    <color name="text_color_pink">#EB1460</color>
+    <color name="text_color_purple">#9C1AB1</color>
+    <color name="text_color_deep_purple">#6633B9</color>
+    <color name="text_color_indigo">#3D4DB7</color>
+    <color name="text_color_blue">#1093F5</color>
+    <color name="text_color_light_blue">#00A6F6</color>
+    <color name="text_color_cyan">#00BBD5</color>
+    <color name="text_color_teal">#009687</color>
+    <color name="text_color_green">#46AF4A</color>
+    <color name="text_color_light_green">#88C440</color>
+    <color name="text_color_lime">#CCDD1E</color>
+    <color name="text_color_yellow">#FFEC16</color>
+    <color name="text_color_amber">#FFC100</color>
+    <color name="text_color_orange">#FF9800</color>
+    <color name="text_color_deep_orange">#FF5505</color>
+    <color name="text_color_brown">#7A5547</color>
+    <color name="text_color_dark_grey">#444444</color>
+    <color name="text_color_grey">#888888</color>
+    <color name="text_color_blue_grey">#5E7C8B</color>
+    <!--for color picker-->
+</resources>

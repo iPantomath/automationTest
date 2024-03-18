@@ -1,0 +1,13 @@
+def loadKeys() {
+    def keysPropsFile = file('keys.properties')
+    def keysProperties = new Properties()
+    if (keysPropsFile.exists()) {
+        keysProperties.load(new FileInputStream(keysPropsFile))
+    } else {
+        throw new Exception("File keys.properties not found")
+    }
+
+    ext.keys = keysProperties
+}
+
+loadKeys()

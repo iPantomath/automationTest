@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DHL App Center TIP</string>
+    <string name="testing_parameters" translatable="false">TESTING PARAMETERS</string>
+    <string name="dmac_offline_mode_simulation" translatable="false">DMAC offline mode simulation</string>
+    <string name="dmac_backend_services_available" translatable="false">DMAC backend services available</string>
+    <string name="access_token_expired" translatable="false">Access token expired</string>
+    <string name="hash_token_invalid" translatable="false">Hash token invalid</string>
+    <string name="testing">TESTING (TIP)</string>
+</resources>

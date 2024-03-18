@@ -1,0 +1,259 @@
+﻿<resources>
+    <string name="app_name">DHL App Center (DMAC)</string>
+
+    <string name="market_title">DMAC</string>
+
+    <string name="market_required">Required</string>
+    <string name="market_all">Apps</string>
+
+    <string name="market_action_installed">INSTALLED</string>
+    <string name="market_action_install">INSTALL</string>
+    <string name="market_action_update">UPDATE</string>
+    <string name="market_action_request">REQUEST</string>
+    <string name="market_action_requested">REQUESTED</string>
+
+    <string name="market_dependency_required">Prerequisites installation required.</string>
+
+    <string name="configuration_title">Launcher personalization</string>
+    <string name="background_text">Background text</string>
+    <string name="configuration_wallpaper">Wallpaper</string>
+    <string name="configuration_text_color">Text color</string>
+    <string name="configuration_wallpaper_select">Select</string>
+    <string name="launcher_enabled" translatable="false">Launcher enabled</string>
+
+    <string name="login_screen_info">Your device has not been registered yet. Please enter your email address.</string>
+    <string name="auto_login_screen_info">Your device has not been registered yet. Please enter device details.</string>
+    <string name="login_auto_screen_info">Your device has not been registered yet. Please wait automated registration is in progress...</string>
+    <string name="login_auto_error">Automated registration not successful, retry or try different registration type.</string>
+    <string name="pin_screen_info">PIN code was sent to \n%1$s. Please check your inbox and enter the PIN code below.</string>
+    <string name="wrong_email">Please enter valid email address!</string>
+    <string name="submit_btn">SUBMIT</string>
+    <string name="re_send_request">Re-send request</string>
+    <string name="lorem"><![CDATA[Descriptionr\nNutzen Sie einfach und bequem von unterwegs mit unserer Android App die DHL Paket Services von Deutsche Post DHL.r\nFolgende Services stehen Ihnen mit der kostenlosen DHL Paket Android App immer und überall zur Verfügung:r\nPakete:r\n• Paket-Sendungsverfolgung inkl. Barcode-Scannerr\n• Sendungsübersicht: Bis zu 10 Sendungen speichern & verwaltenr\n• Sendungsübersicht: Aktualisieren Sie alle Sendungen mit einem Klickr\n• Sendungsstatus per E-Mail weiterleitenr\n• Zugriff auf zusätzliche Services nach Login für registrierte Paket.de Benutzerr\n• Sendungsübersicht (eingeloggt): Bis zu 100 Sendungen speichern & verwalten inkl. Archivr\n• Sendungsübersicht (eingeloggt): Automatische Anzeige vieler Pakete mit PostNummer r\n• Wunschtag (eingeloggt): Bei geeigneten Sendungen aus angebotenen Zustelltagen einen Wunschtag auswählenr\nPortorechner:r\n• Preisauskunft für DHL Paket Privatkundenprodukte r\n• Preisauskunft für DHL Express Privatkundenprodukter\nPostfinder:r\n• Packstationen-, Paketboxen- & Filial-Suche inkl. Postfiliale Direkt und Öffnungszeitenr\n• GPS-unterstützte Suche oder manuelle Adresseingaber\n• Ergebnisse als Listen- Kartenansicht]]></string>
+    <string name="email_address">Email address</string>
+    <string name="wait_request">Please wait your request is being processed</string>
+    <string name="about">About device</string>
+    <string name="starting_download">Starting download, installation will start automatically.</string>
+    <string name="my_apps_tab_title">My apps</string>
+    <string name="toolbar_title">DHL App Center</string>
+    //about activity titles
+    <string name="app_full_name">DHL App Center (DMAC)</string>
+    <string name="application_build_version">Application build version</string>
+    <string name="time_zone">Time Zone</string>
+    <string name="os_version">OS Version</string>
+    <string name="registered_email">Registered email</string>
+    <string name="imei">IMEI</string>
+    <string name="sn">S/N</string>
+    <string name="contact">Contact</string>
+    <string name="contact_info_html">For support please send an email to new.servicedesk@dhl.com from your company account and mention DMAC service in the message body.</string>
+    <string name="logout">Unregister</string>
+    <string name="really_unregister">Do you really want to unregister this device?</string>
+    <string name="unable_to_connect">Unable to connect to server.</string>
+    <string name="rate_me">Rate this app:</string>
+    <string name="details_annotation">Annotation:</string>
+    <string name="details_update">Update:</string>
+    <string name="details_description">Description:</string>
+    <string name="details_release_note">Application Notes:</string>
+    <string name="details_versions">Version Notes:</string>
+    <string name="kernel_version" translatable="false">Kernel version:</string>
+    <string name="patch_version" translatable="false">Patch version:</string>
+    <string name="manufacturer" translatable="false">Manufacturer:</string>
+    <string name="open_weblink">OPEN</string>
+    <string name="details">Details</string>
+    <string name="visit_web">Visit website</string>
+    <string name="remove_from_myapss">Remove from My apps.</string>
+    <string name="add_to_myapps">Add to My apps.</string>
+    <string name="email_not_registered">Your device or email is not registered. Contact your supervisor</string>
+    <string name="now_we_can_install">Now you can install apps from our store.</string>
+    <string name="cant_install_apps_without_permissions">We can\'t install apps to your device without READ and WRITE permission, consider granting these permissions.</string>
+    <string name="md5_donot_match">MD5 do not match, try downloading again.</string>
+    <string name="file_corrupted">File is corrupted, try downloading again.</string>
+    <string name="save_config">Save</string>
+    <string name="you_have_entered_wrong_passcode">You have entered wrong passcode</string>
+    <string name="please_enter_your_passcode">Please enter your passcode</string>
+    <string name="passcode_mismatch_error">Passcode mismatch. Please try again</string>
+    <string name="passcode_not_set_error">Passcode is not set</string>
+    <string name="passcode_is_invalid_error">Invalid passcode</string>
+    <string name="you_have_entered_wrong_passcode_3_times">You have entered wrong passcode more than 3 times, please wait 10 minutes to try again</string>
+    <string name="reset_pin">Reset passcode</string>
+    <string name="set_passcode">Set passcode</string>
+    <string name="menu_lock_corporate_apps">Lock corporate apps</string>
+    <string name="menu_about">About</string>
+    <string name="menu_change_passcode">Change passcode</string>
+    <string name="request_pin_error">Error to request the PIN</string>
+    <string name="deactivated_user">User is deactivated</string>
+    <string name="server_not_responding_error">Server not responding. Please try again later.</string>
+    <string name="uuid">UUID</string>
+    <string name="pls_get_internet">Please get internet connection before log in.</string>
+    <string name="server_is_not_resp">Server is not responding please contact your help desk or try it later.</string>
+    <string name="change_passcode">Change passcode</string>
+    <string name="corporate_apps_may_require">Corporate apps may require a passcode to help protect enterprise data</string>
+    <string name="corporate_apps_may_require2">Please set 4-6 digit passcode for this device</string>
+    <string name="corporate_apps_may_require_dialog">Corporate apps may require a passcode to help protect enterprise data\n\nPlease set 4-6 digit passcode for this device.\n\nApps can be accessed for 15 minutes without a need to re-login after the passcode is used.\n\nAccess to apps can be manually blocked from App Center using "Lock corporate apps" menu item or icon</string>
+    <string name="enter_new_passcode">Enter new passcode</string>
+    <string name="verify_your_new_passcode">Verify your new passcode</string>
+    <string name="to_change_your_passcode">To change your passcode, authentication using PIN code sent to the email address used for device registration is required first. Do you want to continue and change your passcode?</string>
+    <string name="please_enter_your_passcode_to_access">Corporate apps using the passcode \nset on this device are locked.\n\nPlease enter your passcode to access them.</string>
+    <string name="failed_load_apps_list">Failed to load the list of the applications. Please, check Your network connection</string>
+    <string name="failed_load_app_details">Failed to load the application details</string>
+    <string name="cant_login_now">Can\'t login right now.</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
+    <string name="version">Version</string>
+    <string name="developed_by">Developed by:</string>
+    <string name="support_contact">Support contact:</string>
+    <string name="send_email_chooser">Send Email</string>
+    <string name="rejected_email">The registration email was rejected. Contact your supervisor.</string>
+    <string name="invalid_grant_message">The PIN code you entered is incorrect</string>
+    <string name="max_attempts_reached_message">Maximum number of attempts reached. Please re-send the registration request</string>
+    <string name="pin_expired_message">PIN code was expired. Please re-send the registration request!</string>
+    <string name="failed_request_approve">Failed to request the application approve</string>
+    <string name="app_not_found">Application was not found</string>
+    <string name="device_physical_info">Device physical info</string>
+    <string name="device_physical_info_template">Application build version: %1$s\nTime Zone: %2$s\nUUID: %3$s \nOS Version: %4$s\nDevice Model: %5$s</string>
+
+    <string name="failed_login">Failed to login</string>
+
+    <string name="release_type_test">TEST</string>
+    <string name="release_type_beta">BETA</string>
+    <string name="release_type_dev">DEV</string>
+    <string name="not_stopped_properly">DMAC was not stopped properly. You may not receive notifications</string>
+    <string name="read_phone_state_permission_required">\"Read phone state\" permission required</string>
+    <string name="autoregistration">Automatic</string>
+    <string name="search">Search</string>
+    <string name="close">Close</string>
+    <string name="reset">Reset</string>
+    <string name="send">Send</string>
+    <string name="email">Email</string>
+    <string name="android_model_label">Device Model</string>
+    <string name="fingerprint_authentication_failed">Fingerprint authentication failed</string>
+    <string name="fingerprint_hint_no_fingerprints">In order to use a fingerprint it must be configured in the Settings->Security</string>
+    <string name="fingerprint_hint_not_blocked">In order to use a fingerprint the lock screen must be enabled</string>
+    <string name="fingerprint_hint">You can use a fingerprint instead of a passcode</string>
+    <string name="fingerprint_hint_lockout">Fingerprint is locked out for 30 seconds</string>
+    <string name="biometric_passcode">Biometric authentication for %1$s</string>
+    <string name="enter_passcode_manually">Enter passcode manually</string>
+
+    <string name="device_rooted_message">Root access detected. Please, consider using different device</string>
+
+    <string name="error_invalid_grant">Connection error, please try again later. If the problem persists register your device again.</string>
+    <string name="error_approval_required">Contact your device group admin or register your device again.</string>
+    <string name="error">Error</string>
+    <string name="register_again">Register again</string>
+
+    <!--InstallationSequenceApproveDialog-->
+    <string name="cancel">Cancel</string>
+    <string name="apps_to_install">List of apps to be installed with %1$s</string>
+    <string name="version_template">Version: %1$s</string>
+    <string name="installation_sequence_not_available">You don\'t have access to dependent application. Installation was aborted.</string>
+
+    <string name="dependencies_label">Dependencies: </string>
+    <string name="details_tags">Tags:</string>
+
+    <string name="search_bar_title">DPDHL App Center</string>
+    <string name="server_unavailable_error">Server currently unavailable - try it later.</string>
+
+    <string name="apk_download_success">Download complete</string>
+    <string name="apk_download_fail">Download failed</string>
+
+    <!--Update dialog-->
+    <string name="upgrade_dialog_text">New version of DHL App Center (DMAC) is available. Do you want to start the upgrade now?</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="postpone">Postpone</string>
+
+    <string name="environment">Environment</string>
+    <string name="test_url_label" translatable="false">dmac-test.dhl.com</string>
+    <string name="dev_url_label" translatable="false">dmac-dev.dhl.com</string>
+    <string name="uat_url_label" translatable="false">dmac-uat.dhl.com</string>
+    <string name="uat_prague_url_label" translatable="false">dmac-uat-prg.dhl.com</string>
+    <string name="uat_cyberjaya_url_label" translatable="false">dmac-uat-apis.dhl.com</string>
+    <string name="uat_ashburn_url_label" translatable="false">dmac-uat-qas.dhl.com</string>
+    <string name="custom_url_label" translatable="false">Custom</string>
+
+    <string name="phone_app" translatable="false">Phone app</string>
+    <string name="sms_app" translatable="false">SMS app</string>
+    <string name="camera_app" translatable="false">Camera app</string>
+    <string name="maps_app" translatable="false">Maps app</string>
+    <string name="chrome_app" translatable="false">Chrome app</string>
+    <string name="scan_to_connect_app" translatable="false">Scan-To-Connect</string>
+    <string name="stagenow_app" translatable="false">StageNow</string>
+    <string name="mobicontrol_app" translatable="false">MobiControl</string>
+
+    <!-- Default title for color picker dialog [CHAR LIMIT=30] -->
+    <string name="color_picker_default_title" translatable="false">Select a Color</string>
+    <!-- Content description for a color square. -->
+    <string name="color_swatch_description" translatable="false">Color %1$d</string>
+    <!-- Content description for a selected color square. -->
+    <string name="color_swatch_description_selected" translatable="false">Color %1$d selected</string>
+    
+    <string name="default_launcher_description" translatable="false">DMAC</string>
+
+    <!--AAD-->
+    <string name="azure_login">Azure login</string>
+    <string name="aad_login_failed">Failed to login via Azure</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="send_me_pin">Send me a PIN</string>
+
+    <string name="nc_important_name" translatable="false">Important notifications</string>
+    <string name="nc_important_description" translatable="false">The app will send most important notifications into this channel</string>
+    <string name="nc_minor_name" translatable="false">Minor notifications</string>
+    <string name="nc_minor_description" translatable="false">The app will send minor notifications into this channel</string>
+    <string name="nc_fg_service_name" translatable="false">FG Service notifications</string>
+    <string name="nc_fg_service_description" translatable="false">The app will send foreground service notifications into this channel</string>
+
+    <string name="tap_to_install" translatable="false">Tap to start the installation</string>
+
+    <string name="empty_field_error" translatable="false">Fill in this field</string>
+
+    <string name="internal">Internal</string>
+    <string name="public_tab">Public</string>
+    <string name="notifications">Notifications</string>
+    <string name="inventory">Inventory</string>
+    <string name="inventory_title">My mobile inventory</string>
+    <string name="settings">Settings</string>
+
+    <string name="filter">Filter</string>
+    <string name="categories">Categories</string>
+    <string name="category_show_all">Show all apps(all)</string>
+    <string name="category_dpdhl_group">DHL Group (DHL)</string>
+    <string name="category_global_forwarding_freight">DHL Global Forwarding(DGFF)</string>
+    <string name="category_supply_chain">DHL Supply Chain(DSC)</string>
+    <string name="category_ecs">DHL eCommerce Solutions(eCS)</string>
+    <string name="category_express">DHL Express(EXP)</string>
+    <string name="category_gbs_csi_cc">Global Business Services, Customer Solutions &amp; Innovations and Customer Care(GBS, CSI &amp; CC)</string>
+    <string name="category_pnp">Post &amp; Parcel(P&amp;P)</string>
+
+    <string name="public_apps">Public Apps</string>
+    <string name="installed_apps">Installed Apps</string>
+    <string name="installed">Installed</string>
+
+    <string name="settings_about">About device</string>
+    <string name="settings_whats_new">What\'s new</string>
+    <string name="settings_terms">Terms of service</string>
+    <string name="settings_privacy_notice">Privacy notice</string>
+    <string name="settings_disclaimer">Disclaimer</string>
+    <string name="settings_contact">Contact</string>
+    <string name="settings_lock_corporate_apps">Lock access to corporate apps</string>
+    <string name="settings_device_owner">Device owner</string>
+    <string name="settings_sim_owner">SIM card owner</string>
+    <string name="shortcut_app_name"> <u>Name:</u> </string>
+    <string name="shortcut_app_url"> <u>URL:</u> </string>
+    <string name="dmac_offline_mode_simulation" translatable="false">DMAC offline mode simulation</string>
+    <string name="dmac_backend_services_available" translatable="false">DMAC backend services available</string>
+    <string name="access_token_expired" translatable="false">Access token expired</string>
+    <string name="hash_token_invalid" translatable="false">Hash token invalid</string>
+
+    <string name="retry">Retry</string>
+    <string name="failed_load_notifications">Failed to load notifications. Please, check Your network connection</string>
+    <string name="failed_load_further_notifications">Failed to load further notifications. Please, check Your network connection</string>
+
+    <string name="owner_private">Private</string>
+    <string name="owner_corporate">Corporate</string>
+    <string name="owner_both">Both</string>
+
+    <string name="support">Support</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_info_html">In case you\'d like to send a feedback or suggestion regarding DMAC, please send an email to demp@dhl.com from your company account. Thank you!</string>
+
+    <string name="empty" translatable="false"></string>
+</resources>

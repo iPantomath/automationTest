@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/about_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/app_full_name"
+                android:textColor="#333333"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/rooted_device_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/device_rooted_message_bg"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:text="@string/device_rooted_message"/>
+            <TextView
+                android:id="@+id/about_build_title"
+                style="@style/about_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/application_build_version"
+                />
+
+            <TextView
+                android:id="@+id/about_build_number"
+                style="@style/about_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="1.9.1034"
+                />
+
+            <TextView
+                android:id="@+id/time_zone_title"
+                style="@style/about_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time_zone"
+                />
+
+            <TextView
+                android:id="@+id/time_zone_value"
+                style="@style/about_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/androidIDLabel"
+                style="@style/about_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/uuid"
+                />
+
+            <TextView
+                android:id="@+id/androidIDVal"
+                style="@style/about_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="sd6fg4das65gf4s6d5f4g"
+                />
+
+            <TextView
+                android:id="@+id/os_version_title"
+                style="@style/about_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/os_version"
+                />
+
+            <TextView
+                android:id="@+id/os_version_value"
+                style="@style/about_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/kernel_version_title"
+                style="@style/about_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kernel_version"
+                />
+
+            <TextView
+                android:id="@+id/kernel_version_value"
+                style="@style/about_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/patch_version_title"
+                style="@style/about_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/patch_version"
+                />
+
+            <TextView
+                android:id="@+id/patch_version_value"
+                style="@style/about_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/manufacturer_title"
+                style="@style/about_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manufacturer"
+                />
+
+            <TextView
+                android:id="@+id/manufacturer_value"
+                style="@style/about_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/androidMODELLabel"
+                style="@style/about_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/android_model_label"
+                />
+
+            <TextView
+                android:id="@+id/androidMODELVal"
+                style="@style/about_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="sd6fg4das65gf4s6d5f4g"
+                />
+
+            <TextView
+                android:id="@+id/about_email_title"
+                style="@style/about_title"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registered_email"
+
+                />
+            <TextView
+                android:id="@+id/about_email_address"
+                style="@style/about_value"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="rudolf.hladik@dhl.com"
+                />
+
+            <TextView
+                android:id="@+id/about_imei_title"
+                style="@style/about_title"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/imei" />
+            <TextView
+                android:id="@+id/about_imei"
+                style="@style/about_value"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="imei" />
+
+            <TextView
+                android:id="@+id/about_sn_title"
+                style="@style/about_title"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sn" />
+            <TextView
+                android:id="@+id/about_sn"
+                style="@style/about_value"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="S/N" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

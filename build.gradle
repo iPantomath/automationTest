@@ -1,0 +1,129 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = "1.5.0"
+    ext.hilt_version = "2.37"
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.3'
+        classpath 'io.fabric.tools:gradle:1.28.0'
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+
+    apply from: project.rootProject.file("keys.gradle")
+}
+
+ext {
+    compileSdkVersion = 30
+    minSdkVersion = 23
+    targetSdkVersion = 30
+    versionCode = 4107
+    versionName  = '2.1.48'
+
+    versions = [
+            appcompat                   : '1.3.0',
+            material                    : '1.4.0',
+            fragment                    : '1.3.5',
+            fragment_ktx                : '1.3.5',
+            lifecycle                   : "2.4.0",
+            paging                      : "3.0.0",
+            room                        : "2.3.0",
+            constraint_layout           : '2.0.4',
+            core_ktx                    : '1.6.0',
+            coroutines                  : '1.4.0',
+            biometric                   : '1.0.0',
+            play_services               : '16.0.0',
+            play_services_vision        : '16.2.0',
+            retrofit                    : '2.9.0',
+            gson                        : '2.8.9',
+            gson_converter              : '2.0.0',
+            okhttp_logging_interceptor  : '3.8.0',
+            glide                       : '3.6.1',
+            firebase_messaging          : '17.3.4',
+            crashlytics                 : '2.9.6',
+            msal                        : '3.0.2',
+            timber                      : '4.7.1',
+            junit                       : '4.12',
+            robolectric                 : '4.6'
+    ]
+
+    libs = [
+            kotlin_stdlib               : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+
+            appcompat                   : "androidx.appcompat:appcompat:$versions.appcompat",
+            androidx_material           : "com.google.android.material:material:$versions.material",
+            androidx_fragment           : "androidx.fragment:fragment:$versions.fragment",
+            fragment_ktx                : "androidx.fragment:fragment-ktx:$versions.fragment_ktx",
+            constraintlayout            : "androidx.constraintlayout:constraintlayout:$versions.constraint_layout",
+
+            biometric                   : "androidx.biometric:biometric:$versions.biometric",
+
+            core_ktx                    : "androidx.core:core-ktx:$versions.core_ktx",
+
+            //lifecycle
+            lifecycle_common            : "androidx.lifecycle:lifecycle-common-java8:$versions.lifecycle",
+            lifecycle_ktx               : "androidx.lifecycle:lifecycle-runtime-ktx:$versions.lifecycle",
+
+            paging                      : "androidx.paging:paging-runtime:$versions.paging",
+
+            //room
+            room                        : "androidx.room:room-runtime:$versions.room",
+            room_compiler               : "androidx.room:room-compiler:$versions.room",
+            room_ktx                    : "androidx.room:room-ktx:$versions.room",
+
+            //coroutines
+            coroutines_android          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines",
+
+            play_services               : "com.google.android.gms:play-services-gcm:${versions.play_services}",
+            play_services_vision        : "com.google.android.gms:play-services-vision:${versions.play_services_vision}",
+
+            retrofit                    : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+            gson                        : "com.google.code.gson:gson:${versions.gson}",
+            gson_converter              : "com.squareup.retrofit2:converter-gson:${versions.gson_converter}",
+            okhttp_logging_interceptor  : "com.squareup.okhttp3:logging-interceptor:${versions.okhttp_logging_interceptor}",
+
+            glide                       : "com.github.bumptech.glide:glide:${versions.glide}",
+
+            //Firebase
+            firebase_messaging          : "com.google.firebase:firebase-messaging:${versions.firebase_messaging}",
+            crashlytics                 : "com.crashlytics.sdk.android:crashlytics:${versions.crashlytics}",
+
+            msal                        : "com.microsoft.identity.client:msal:${versions.msal}",
+
+            hilt                        : "com.google.dagger:hilt-android:${ext.hilt_version}",
+            hilt_compiler               : "com.google.dagger:hilt-compiler:${ext.hilt_version}",
+
+            timber                      : "com.jakewharton.timber:timber:${versions.timber}",
+
+            junit                       : "junit:junit:${versions.junit}",
+            robolectric                 : "org.robolectric:robolectric:${versions.robolectric}"
+    ]
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven {
+            url 'https://maven.google.com/'
+        }
+    }
+}

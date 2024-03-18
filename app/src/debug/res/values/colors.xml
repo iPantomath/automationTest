@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_activity_toolbar_color">#B2D687</color>
+    <color name="build_type_color">#B2D687</color>
+</resources>

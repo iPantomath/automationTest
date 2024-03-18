@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application>
+        <activity
+            android:name="com.dhl.demp.mydmac.activity.TestingActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/testing"
+            android:parentActivityName="com.dhl.demp.dmac.ui.MainActivity"
+            android:theme="@style/TestingActivityTheme"/>
+    </application>
+</manifest>

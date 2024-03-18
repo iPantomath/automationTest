@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="installation_sequence_marker_scale" format="float" type="dimen">0.8</item>
+    <bool name="is_launcher_switchable">false</bool>
+    <integer name="apps_list_columns_count">1</integer>
+</resources>

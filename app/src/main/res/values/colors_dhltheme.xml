@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dhltheme_color">#000000</color>
+    <color name="confirm_green">#95c442</color>
+    <color name="confirmButtonPressed">#75a422</color>
+    <color name="confirmButtonNormal">#95c442</color>
+</resources>

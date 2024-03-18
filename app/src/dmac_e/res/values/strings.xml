@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DHL eApp Center</string>
+
+    <string name="login_screen_info">Your device has not been registered yet. Please enter your email address or phone number.</string>
+    <string name="email_address">Email address/phone number</string>
+
+    <string name="registered_email">Registered email/phone number</string>
+</resources>

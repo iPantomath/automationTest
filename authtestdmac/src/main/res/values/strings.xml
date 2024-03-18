@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AuthTestDMAC</string>
+    <string name="ACTIVATE">ACTIVATE</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="INFO">INFO</string>
+    <string name="TOKEN">TOKEN</string>
+    <string name="result">result</string>
+    <string name="res_from_dmac">Result from DMAC:</string>
+    <string name="test">Test for DMAC application</string>
+</resources>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <include layout="@layout/app_toolbar"  />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/launcher_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingBottom="8dip"
+        android:text="@string/launcher_enabled"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/personalization_activity_padding"
+        android:layout_marginRight="@dimen/personalization_activity_padding"
+        android:layout_marginTop="@dimen/personalization_activity_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="#323232"
+            android:textSize="12sp"
+            android:text="@string/background_text" />
+
+        <RelativeLayout
+            android:id="@+id/color_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical">
+
+            <TextView
+                android:id="@+id/letter_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="A"
+                android:textColor="#323232"
+                android:textSize="20dip"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_alignBaseline="@id/letter_a"
+                android:layout_toRightOf="@id/letter_a"
+                android:text="@string/configuration_text_color"
+                android:textColor="#323232"
+                android:textSize="12sp"/>
+            <View
+                android:id="@+id/color_preview"
+                android:layout_width="match_parent"
+                android:layout_height="4dip"
+                android:layout_below="@id/letter_a"
+                android:layout_marginTop="-4dip"
+                android:layout_alignLeft="@id/letter_a"
+                android:layout_alignRight="@id/letter_a"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/bg_text_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/personalization_activity_padding"
+        android:layout_marginRight="@dimen/personalization_activity_padding"
+        android:layout_marginBottom="10dip"
+        android:singleLine="true"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/wallpaper_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/personalization_activity_padding"
+        android:layout_marginBottom="4dp"
+        android:text="@string/configuration_wallpaper"
+        android:textColor="#323232"
+        android:textSize="12sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="@dimen/personalization_activity_padding"
+        android:layout_marginRight="@dimen/personalization_activity_padding">
+
+        <TextView
+            android:id="@+id/wallpaper_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="#757575"
+            android:textSize="12sp" />
+        <ImageView
+            android:id="@+id/delete_wallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            app:srcCompat="@drawable/ic_delete"
+            android:clickable="true"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/wallpaper_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="@dimen/personalization_activity_padding"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingTop="6dip"
+        android:paddingBottom="6dip"
+        android:minHeight="0dip"
+        android:text="@string/configuration_wallpaper_select"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:background="@drawable/express_red_button"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dip"
+        android:layout_marginLeft="@dimen/personalization_activity_padding"
+        android:layout_marginRight="@dimen/personalization_activity_padding">
+        <CheckBox
+            android:id="@+id/phone_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/phone_app"/>
+
+        <CheckBox
+            android:id="@+id/sms_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sms_app" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dip"
+        android:layout_marginLeft="@dimen/personalization_activity_padding"
+        android:layout_marginRight="@dimen/personalization_activity_padding">
+        <CheckBox
+            android:id="@+id/camera_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/camera_app" />
+
+        <CheckBox
+            android:id="@+id/maps_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/maps_app"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dip"
+        android:layout_marginLeft="@dimen/personalization_activity_padding"
+        android:layout_marginRight="@dimen/personalization_activity_padding">
+        <CheckBox
+            android:id="@+id/chrome_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/chrome_app" />
+
+        <CheckBox
+            android:id="@+id/scan_to_connect_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/scan_to_connect_app"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dip"
+        android:layout_marginLeft="@dimen/personalization_activity_padding"
+        android:layout_marginRight="@dimen/personalization_activity_padding">
+        <CheckBox
+            android:id="@+id/stagenow_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stagenow_app" />
+
+        <CheckBox
+            android:id="@+id/mobicontrol_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mobicontrol_app"/>
+    </LinearLayout>
+
+            <Space
+                android:layout_width="1dip"
+                android:layout_height="0dip"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/personalization_activity_padding"
+                android:layout_marginRight="@dimen/personalization_activity_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="Application Shortcut"
+                        android:textColor="@color/black"/>
+                    <Button
+                        android:id="@+id/add_shortcut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/express_red_button"
+                        android:text="ADD"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+            </FrameLayout>
+            <TextView
+                android:id="@+id/no_shortcut_exist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/personalization_activity_padding"
+                android:layout_marginRight="@dimen/personalization_activity_padding"
+                android:text="No Shortcut Applications exist"
+                android:textColor="@color/dark_grey"
+                android:background="@color/back_gray"
+                android:gravity="center_horizontal"/>
+
+            <ListView
+                android:id="@+id/shortcut_list"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="@dimen/personalization_activity_padding"
+                android:layout_marginRight="@dimen/personalization_activity_padding"
+                android:layout_marginTop="5dp"
+                android:background="@color/browser_actions_bg_grey"
+                android:nestedScrollingEnabled="true"/>
+
+    <Space
+        android:layout_width="1dip"
+        android:layout_height="0dip"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dip"
+        android:layout_marginRight="60dip"
+        android:layout_marginBottom="30dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/express_red_button"
+        android:text="@string/save_config"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+
+    <Space
+        android:layout_width="1dip"
+        android:layout_height="0dip"
+        android:layout_weight="1"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
